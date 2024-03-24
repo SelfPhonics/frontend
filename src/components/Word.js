@@ -27,7 +27,7 @@ function section(data) {
   const columns = data.sections?.length;
 
   return (
-    <div className={`grid grid-cols-${columns}`}>
+    <div className="grid grid-flow-col auto-cols-fr">
       {data.sections
         ? data.sections.map((word, key) => {
             return (
